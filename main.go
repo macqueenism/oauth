@@ -149,7 +149,6 @@ func userHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	val := session.Values["user"]
-	fmt.Println(val)
 	var user = &User{}
 	if _, ok := val.(*User); !ok {
 		httpError(w, err, "getting user from session ")

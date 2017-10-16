@@ -1,10 +1,13 @@
 ## Oauth2 with Go using gorilla sessions
 
+#### Intro
+Loosely based off this [blog post][http://skarlso.github.io/2016/06/12/google-signin-with-go/] this is an example of how to authenticate with google using Golang and OAuth2.
+
 #### Libraries
 `go get golang.org/x/oauth2 cloud.google.com/go/compute/metadata github.com/gorilla/sessions github.com/gorilla/mux`
 
 #### Setup
-Go to google developer console (https://console.developers.google.com/) and start a new project.
+Go to [google developer console](https://console.developers.google.com/) and start a new project.
 Once in the new project, in the `product and services` menu select `APIs and services` then `credentials`.
 
 Click `Create Credentials` and `OAuth client id`.
